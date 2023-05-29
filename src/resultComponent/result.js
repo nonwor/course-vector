@@ -156,14 +156,18 @@ const Result=({data})=>{
                             onChange={event => handleCheckboxChange(event, item)}
                             />
 
-                            <p className="title">{item.orig_title}</p>
+                            <p className="title" 
+                                title={item.description}>
+                                {item.orig_title}
+                            </p>
                             <p className="source">Source: {item.source}</p>
                             <p className="rating">Rating: {item.rating||"N/A"}</p>
                             <p className="hours">Length: {item.hours||"N/A"} hours</p>
                             <a href={`https://www.google.com/search?q=${item.search}+${item.source}`} target="_blank" className="buttonlink">Go to Course</a>
-                        
+                            
                         </div>
                     ))}
+                    
                 </div>        
                 
                 <button onClick={saveItems}>Save</button>

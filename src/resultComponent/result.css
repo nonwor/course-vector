@@ -1,0 +1,38 @@
+.courseItem{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(153, 190, 190);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.source{
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.rating{
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.hours{
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.buttonlink{
+    
+    padding: 8px 8px 8px 8px;
+    background-color: #1f79dae1;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+
+}

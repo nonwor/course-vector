@@ -52,31 +52,45 @@ const UserInput =()=>{
     return(
         <div className="userInput">
             <h3>Online Course Recommender using Word2Vec</h3>
-            <div className="academicSupport">
-                Summary and Reference:
-                <p>The goal of this project is to use word embeddings, to find courses related to job title.</p>
-                <a href="/pdf/team143report.pdf" target="_blank" rel="noopener noreferrer">
-                    Academic Paper
-                </a>
-                <a href="/pdf/team143poster.pdf" target="_blank" rel="noopener noreferrer">
-                    Poster Presentation
-                </a>
-            </div>
+            <div className="info-search">
+                <div className="academicSupport">
+                    Summary and Reference:
+                    <p>The goal of this project is to use word embeddings, to find courses related to job title.</p>
+                    <a href="/pdf/team143report.pdf" target="_blank" rel="noopener noreferrer">
+                        Academic Paper
+                    </a>
+                    <a href="/pdf/team143poster.pdf" target="_blank" rel="noopener noreferrer">
+                        Poster Presentation
+                    </a>
+                </div>
             
-            <form onSubmit={captureAndSend}>
-                <label>
-                    Career:
+                <form className="inputform" onSubmit={captureAndSend}>
+                    <label>
+                        Career/Area of Interest: 
+                        {/* <input
+                        type="text"
+                        name="career"
+                        value={userInput}
+                        onChange={handleChange}
+                        /> */}
+                    </label>
                     <input
-                    type="text"
-                    name="career"
-                    value={userInput}
-                    onChange={handleChange}
-                    />
-                </label>
-                <button type="submit">GO!</button>
-                <button onClick={handleButtonClick}>Go to Save</button>
-            </form>
-            <div> Result field
+                        type="text"
+                        name="career"
+                        value={userInput}
+                        onChange={handleChange}
+                        />
+                    <button type="submit">Search</button>
+                    <button onClick={handleButtonClick}>Go to Saved</button>
+                </form>
+
+                <div className="about">
+                    Links
+                </div>
+                
+            </div>
+           
+            <div>
                 <Result data={data}/>
             </div>
         </div>

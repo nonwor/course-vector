@@ -119,50 +119,53 @@ const Result=({data})=>{
             filteredItems = filteredItems.sort((a,b)=>a.hours-b.hours);
         }
         
-
-        
         return(
-            <div> Some Data
-                <div>Select Source</div>
-                <select value={filterSource} onChange={handleDropdownChange}>
-                    <option value="">All Categories</option>
-                    {categories.map(category => (
-                    <option key={category} value={category}>{category}</option>
-                    ))}
-                </select>
+            <div>
+                <div className="filters">Select Filters:
+                    <select value={filterSource} onChange={handleDropdownChange}>
+                        <option value="">All Categories</option>
+                        {categories.map(category => (
+                        <option key={category} value={category}>{category}</option>
+                        ))}
+                    </select>
 
-                {/* This is for sorting rating */}
-                <select value={orderRating} onChange={handleDropdownChangeRating}>
-                    <option value="">Raiting: Default</option>
-                    <option value="0">Rating: High-Low</option>
-                    <option value="1">Rating: Low-High</option>
-                </select>
+                    {/* This is for sorting rating */}
+                    <select value={orderRating} onChange={handleDropdownChangeRating}>
+                        <option value="">Raiting: Default</option>
+                        <option value="0">Rating: High-Low</option>
+                        <option value="1">Rating: Low-High</option>
+                    </select>
 
-                {/* This is for sorting rating */}
-                <select value={orderLength} onChange={handleDropdownChangeLength}>
-                    <option value="">Length: Default</option>
-                    <option value="0">Length: High-Low</option>
-                    <option value="1">Length: Low-High</option>
-                </select>
+                    {/* This is for sorting rating */}
+                    <select value={orderLength} onChange={handleDropdownChangeLength}>
+                        <option value="">Length: Default</option>
+                        <option value="0">Length: High-Low</option>
+                        <option value="1">Length: Low-High</option>
+                    </select>
 
-                {filteredItems.map(item => (
-                    <div key={item.cos_sim} className="courseItem">
+                </div>
+                <div className="scroll-container">
+                    {filteredItems.map(item => (
+                        <div key={item.cos_sim} className="courseItem">
+                            
+                            {/* We try to populat items if it's already been checked */}
+                            <input
+                            className="checkbox"
+                            type="checkbox"
+                            checked={selectedItems.some(checkedItem => checkedItem.cos_sim == item.cos_sim)}
+                            onChange={event => handleCheckboxChange(event, item)}
+                            />
+
+                            <p className="title">{item.orig_title}</p>
+                            <p className="source">Source: {item.source}</p>
+                            <p className="rating">Rating: {item.rating||"N/A"}</p>
+                            <p className="hours">Length: {item.hours||"N/A"} hours</p>
+                            <a href={`https://www.google.com/search?q=${item.search}+${item.source}`} target="_blank" className="buttonlink">Go to Course</a>
                         
-                        {/* We try to populat items if it's already been checked */}
-                        <input
-                        type="checkbox"
-                        checked={selectedItems.some(checkedItem => checkedItem.cos_sim == item.cos_sim)}
-                        onChange={event => handleCheckboxChange(event, item)}
-                        />
-
-                        <p className="title">{item.orig_title}</p>
-                        <p className="source">Source: {item.source}</p>
-                        <p className="rating">Rating: {item.rating||"N/A"}</p>
-                        <p className="hours">Length: {item.hours||"N/A"} hours</p>
-                        <a href={`https://www.google.com/search?q=${item.search}+${item.source}`} target="_blank" className="buttonlink">Go to Course</a>
-                       
-                    </div>
-                ))}
+                        </div>
+                    ))}
+                </div>        
+                
                 <button onClick={saveItems}>Save</button>
             </div>
         )

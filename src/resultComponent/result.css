@@ -2,11 +2,11 @@
     display: flex;
     /* justify-content: space-between; */
     background-color: rgb(153, 190, 190);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .source{
@@ -34,5 +34,27 @@
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
+}
 
+.title{
+    padding-left: 10px;
+}
+
+.checkbox{
+    transform: scale(1.5);
+}
+
+.scroll-container{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 70vh;
+    overflow: auto;
+   
+}
+
+.filters{
+    margin-top: 12px;
+}
+.filters select{
+    margin-left: 18px;
 }

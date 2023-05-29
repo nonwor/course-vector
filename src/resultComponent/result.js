@@ -123,7 +123,7 @@ const Result=({data})=>{
             <div>
                 <div className="filters">Select Filters:
                     <select value={filterSource} onChange={handleDropdownChange}>
-                        <option value="">All Categories</option>
+                        <option value="">All Providers</option>
                         {categories.map(category => (
                         <option key={category} value={category}>{category}</option>
                         ))}

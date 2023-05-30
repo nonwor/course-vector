@@ -141,7 +141,7 @@ Ul{
 .icons{
     display: flex;
     margin-top: 6px;
-    margin-left: 40%;
+    justify-content: center;
     
 }
 

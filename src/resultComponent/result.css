@@ -48,7 +48,7 @@
 .scroll-container{
     margin-top: 12px;
     margin-bottom: 12px;
-    height: 65vh;
+    max-height: 65vh;
     overflow: auto;
    
 }

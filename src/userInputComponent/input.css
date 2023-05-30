@@ -2,6 +2,7 @@
     margin: 20px;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
     font-size: 16px;
+    
 }
 
 .mainpagetitle{
@@ -42,8 +43,8 @@ input{
     width: 30%;
 }
 .paragraphSupport{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
 
 .about{
@@ -122,4 +123,23 @@ input{
 
 .button-17:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.sectionTitle{
+    margin-top: 0px;
+}
+
+Ul{
+    margin-top: 8px;
+    list-style-type: none;
+}
+
+.icons{
+    display: flex;
+    padding-left: 35%;
+    margin-top: 6px;
+}
+
+label{
+    font-weight: bold;
 }

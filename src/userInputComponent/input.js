@@ -5,6 +5,10 @@ import './input.css';
 import { useNavigate } from 'react-router-dom';
 import LoadingIcon from '../LoadingIcon.js';
 
+//Get Icons
+import Linkedin from "../icons/linkedinIcons";
+import Github from "../icons/githubIcon";
+
 import axios from 'axios';
 
 const UserInput =()=>{
@@ -59,8 +63,10 @@ const UserInput =()=>{
             <h3 className="mainpagetitle">Online Course Recommender using Word2Vec</h3>
             <div className="info-search">
                 <div className="academicSupport">
-                    
+                <label>
                     Summary and Reference:
+                </label>
+                    
                     <p className="paragraphSupport">This project utilize word embeddings to discover courses relevant to job titles or areas of interest. Word embeddings offer flexible context-based searching, eliminating the need for lexicons or word matching.</p>
                     <a href="/pdf/team143report.pdf" target="_blank" rel="noopener noreferrer">
                         Academic Paper
@@ -87,7 +93,15 @@ const UserInput =()=>{
                 </form>
 
                 <div className="about">
-                    About:
+                    <label>
+                        About:
+                    </label>
+                    <div className="wraperUl">
+                        <ul>
+                            <li>Created by: Sataporn Worasilpchai</li>
+                            <li className="icons">{<Linkedin/>}{<Github/>}</li>
+                        </ul>
+                    </div>
                 </div>
                 
             </div>

@@ -132,12 +132,14 @@ input{
 Ul{
     margin-top: 8px;
     list-style-type: none;
+    padding: 0px;
 }
 
 .icons{
     display: flex;
-    padding-left: 35%;
     margin-top: 6px;
+    margin-left: 40%;
+    
 }
 
 label{

@@ -96,12 +96,12 @@ const UserInput =()=>{
                     <label>
                         About:
                     </label>
-                    <div className="wraperUl">
-                        <ul>
-                            <li>Created by: Sataporn Worasilpchai</li>
-                            <li className="icons">{<Linkedin/>}{<Github/>}</li>
-                        </ul>
-                    </div>
+                    
+                    <ul>
+                        <li>Created by: Sataporn Worasilpchai</li>
+                        <li className="icons">{<Linkedin/>}{<Github/>}</li>
+                    </ul>
+                    
                 </div>
                 
             </div>

@@ -3,7 +3,8 @@ import { ImLinkedin } from 'react-icons/im';
 // CSS approach
 const iconStyle = {
   fontSize: '2rem', // Adjust the size as needed
-  color: 'black'
+  color: 'black',
+  
 };
 
 const Linkedin=()=>{

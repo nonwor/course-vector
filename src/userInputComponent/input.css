@@ -6,15 +6,18 @@
 }
 
 .mainpagetitle{
-    margin-bottom:8px;
+    /* margin-bottom:8px; */
+    margin-top: 0px;
+    margin-bottom:6px;
+
 }
 
 .info-search{
     display: flex;
     justify-content: space-between;
     background-color: rgb(225, 222, 222);
-    
     padding: 12px;
+    border-radius: 15px;
 }
 .inputform {
     /* padding-left: 18lvw; */

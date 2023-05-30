@@ -28,7 +28,15 @@ input{
 .academicSupport{
     width: 30%;
 }
+.paragraphSupport{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 .about{
     width: 30%;
+}
+
+.poster{
+    margin-left: 20px;
 }

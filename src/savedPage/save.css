@@ -9,9 +9,9 @@
 
 .pagetitle{
     flex:1;
-    margin-left:200px
+    margin-left:230px
 }
-.backtohome{
+#backtohome{
     margin-left: auto;
     max-height: 35px;
     align-self: center;

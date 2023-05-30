@@ -40,7 +40,7 @@ const Saved = () =>{
 
             <div className="mainnav">                
                 <h3 className="pagetitle">Saved Courses</h3>
-                <button className="backtohome" onClick={handleButtonClick}>Go to Home</button>
+                <button className="button-17" id="backtohome" onClick={handleButtonClick}>Go to Home</button>
             </div>
             <div className="scroll-container">
                 {selectedItems.map(item => (
@@ -65,7 +65,7 @@ const Saved = () =>{
                     ))}
             </div>
             
-            <button onClick={saveEdit}>Save Edit</button>
+            <button onClick={saveEdit} className="button-17">Save Edit</button>
         </div>
     )
 }

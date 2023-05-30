@@ -42,6 +42,7 @@ const UserInput =()=>{
                 
             } catch (error) {
               console.error(error);
+              setLoading(false)
             }
           };
       
@@ -55,7 +56,7 @@ const UserInput =()=>{
 
     return(
         <div className="userInput">
-            <h3>Online Course Recommender using Word2Vec</h3>
+            <h3 className="mainpagetitle">Online Course Recommender using Word2Vec</h3>
             <div className="info-search">
                 <div className="academicSupport">
                     
@@ -75,14 +76,14 @@ const UserInput =()=>{
                     </label>
                     <input
                         type="text"
-                        name="career"
+                        className="inputfield"
                         value={userInput}
                         onChange={handleChange}
                         />
-                    <button type="submit">
+                    <button type="submit" className="button-17">
                         {loading? <LoadingIcon />: 'Search'}
                     </button>
-                    <button onClick={handleButtonClick}>Go to Saved</button>
+                    <button onClick={handleButtonClick} className="button-17">Go to Saved</button>
                 </form>
 
                 <div className="about">

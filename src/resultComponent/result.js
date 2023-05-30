@@ -170,7 +170,7 @@ const Result=({data})=>{
                     
                 </div>        
                 
-                <button onClick={saveItems}>Save</button>
+                <button className="button-17" onClick={saveItems}>Save</button>
             </div>
         )
     } else {

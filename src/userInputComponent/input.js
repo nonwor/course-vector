@@ -89,7 +89,7 @@ const UserInput =()=>{
                     <button type="submit" className="button-17">
                         {loading? <LoadingIcon />: 'Search'}
                     </button>
-                    <button onClick={handleButtonClick} className="button-17">Go to Saved</button>
+                    <button onClick={handleButtonClick} className="button-17" id="gotosave">Go to Saved</button>
                 </form>
 
                 <div className="about">

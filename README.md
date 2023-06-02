@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# Course-Vector
+This project utilize word embeddings to discover courses relevant to job titles or areas of interest. Word embeddings offer flexible context-based searching, eliminating the need for lexicons or word matching. The front end UI is created with React. The model is served by FastAPI and deployed on Heroku via docker container. Please See FastAPI repo for deployment steps and requirements. Note: Trained model and pickle file exceeds the github file size limit. Please reach out for those files if you wish to run them locally. 
+
+The project and model are deployed on the web, using local storage to save data for the user. The project can be run on your local machine, you will need to change the axios fetch call to the local server.
+
+- Features:
+    - Agnoist search
+    - Platform filter
+    - Rating filter
+    - Course length filter
+    - Saving courses
+    - Removing courses from save
+    - More to come
+
+## Example of Project Running
+![alt text](homepage.png)
+![alt text](savepage.png)
+
 
 This project was bootystrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -39,9 +39,9 @@ const Result=({data})=>{
         const storedItems = localStorage.getItem('items');
         if (storedItems) {
             setFocusItems(JSON.parse(storedItems));
-            console.log(selectedItems);
+            // console.log(selectedItems);
         }
-        console.log(selectedItems);
+        // console.log(selectedItems);
         //
         const oldData = localStorage.getItem('data');
         if(oldData){
@@ -52,7 +52,7 @@ const Result=({data})=>{
 
     const saveItems=()=>{
         //We will save this to local storage
-        console.log("items to save", selectedItems);
+        // console.log("items to save", selectedItems);
         localStorage.setItem('items', JSON.stringify(selectedItems));
     }
 

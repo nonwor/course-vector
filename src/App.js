@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<UserInput/>}/>
+        <Route exact path="/" element={<UserInput/>}/>
         <Route path="/save" element={<Saved/>}/>
       </Routes>
       {/* <UserInput/> */}

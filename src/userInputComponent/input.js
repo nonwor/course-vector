@@ -68,10 +68,10 @@ const UserInput =()=>{
                 </label>
                     
                     <p className="paragraphSupport">This project utilize word embeddings to discover courses relevant to job titles or areas of interest. Word embeddings offer flexible context-based searching, eliminating the need for lexicons or word matching.</p>
-                    <a href="/pdf/team143report.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="course-vector/team143report.pdf" target="_blank" rel="noopener noreferrer">
                         Academic Paper
                     </a>
-                    <a className="poster" href="/pdf/team143poster.pdf" target="_blank" rel="noopener noreferrer">
+                    <a className="poster" href="course-vector/team143poster.pdf" target="_blank" rel="noopener noreferrer">
                         Poster Presentation
                     </a>
                 </div>
